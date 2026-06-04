@@ -20,3 +20,5 @@ git clone https://github.com/WongKinYiu/yolov9.git
 # Navigate into the project folder
 cd yolov9
 ```
+
+Now you are in the directory of the cloned github repo.
