@@ -25,3 +25,5 @@ Now you are in the directory of the cloned github repo.
 
 ## Environment Setup
 It is highly recommended to isolate your dependencies using a virtual environment (venv) to avoid version conflicts with other Python projects on your system.
+
+Create virtual environment using command:
