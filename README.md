@@ -23,8 +23,13 @@ cd yolov9
 
 Now you are in the directory of the cloned github repo.
 
-## Environment Setup
+#### Environment Setup
 It is highly recommended to isolate your dependencies using a virtual environment (venv) to avoid version conflicts with other Python projects on your system.
 
-Create virtual environment using command:
-python -m venv venv
+### 3. Create a Virtual Environment
+Run the following command to create a virtual environment named .venv:
+
+#### On Linux/macOS or Windows
+```
+python -m venv .venv
+```
