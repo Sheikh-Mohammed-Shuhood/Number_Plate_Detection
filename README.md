@@ -33,3 +33,11 @@ Run the following command to create a virtual environment named .venv:
 ```
 python -m venv .venv
 ```
+
+### 4. Activate the Virtual Environment
+Activate the environment based on your operating system:
+
+Linux / macOS:
+```
+source .venv/bin/activate
+```
