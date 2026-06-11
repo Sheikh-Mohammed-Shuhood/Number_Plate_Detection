@@ -41,3 +41,8 @@ Linux / macOS:
 ```
 source .venv/bin/activate
 ```
+
+Windows Powershell:
+```
+python .venv/Scripts/activate
+```
