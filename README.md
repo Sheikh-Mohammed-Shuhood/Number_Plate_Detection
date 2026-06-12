@@ -46,3 +46,8 @@ Windows Powershell:
 ```
 python .venv/Scripts/activate
 ```
+Once activated, your terminal prompt will show (.venv) at the beginning.
+
+### 5. Dependency Installation
+Install Requirements
+With the virtual environment active, upgrade pip and install the required packages (including PyTorch, torchvision, and other dependencies specified by YOLOv9):
