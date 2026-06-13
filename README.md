@@ -51,3 +51,11 @@ Once activated, your terminal prompt will show (.venv) at the beginning.
 ### 5. Dependency Installation
 Install Requirements
 With the virtual environment active, upgrade pip and install the required packages (including PyTorch, torchvision, and other dependencies specified by YOLOv9):
+
+```
+# Upgrade pip to the latest version
+python -m pip install --upgrade pip
+
+# Install dependencies
+pip install -r requirements.txt
+```
