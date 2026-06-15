@@ -61,4 +61,19 @@ pip install -r requirements.txt
 ```
 
 ### 6. Verification
-Checking if the model is loaded properly and object detection module is working good
+Checking if the model is loaded properly and object detection module is working right.
+Run the below code:
+```
+python detect.py --weights "path/to/yolov9.pt" --source "path/to/your/video_or_image.jpg" --device 0
+```
+The yolov9.pt can be found in the readme file of the same, you need to download the weight in order to run the project. 
+There are different files for the weights, based on the size of the model which is trained on the COCO dataset.
+
+### GPU Selection
+* **CUDA Device**: PyTorch (the framework YOLOv9 is built on) assigns an integer index to each available NVIDIA GPU in your system, starting from 0.
+* **Single GPU**: If you have only one GPU installed, its index is 0.
+* **Multi-GPU**: If you have multiple GPUs, --device 1 would target the second GPU, --device 2 the third, and so on.
+
+### Source selection:
+* **--source 0:** This tells the script to look for a local hardware camera instead of a saved file. 0 represents your computer's default integrated webcam.
+* **Secondary Cameras:** If you have an external USB webcam plugged in and want to use it instead, try changing the source to 1 or 2
