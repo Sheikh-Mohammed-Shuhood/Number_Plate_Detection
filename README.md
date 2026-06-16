@@ -77,3 +77,7 @@ There are different files for the weights, based on the size of the model which 
 ### Source selection:
 * **--source 0:** This tells the script to look for a local hardware camera instead of a saved file. 0 represents your computer's default integrated webcam.
 * **Secondary Cameras:** If you have an external USB webcam plugged in and want to use it instead, try changing the source to 1 or 2
+
+To fine tune the model to only detect the License Plate, you need to train the yolo model for it and get the .pt file.
+Here we are using the existing trained weights for detecting the license plate.
+You can download the weights from 
