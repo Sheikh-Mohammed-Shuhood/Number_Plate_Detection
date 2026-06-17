@@ -80,4 +80,7 @@ There are different files for the weights, based on the size of the model which 
 
 To fine tune the model to only detect the License Plate, you need to train the yolo model for it and get the .pt file.
 Here we are using the existing trained weights for detecting the license plate.
-You can download the weights from 
+You can download the weights from kaggle from the below link:
+https://www.kaggle.com/datasets/noepinefrin/yolov9-fine-tuned-plate-detection-model-weights
+
+While running the model use this weights.
