@@ -84,3 +84,6 @@ You can download the weights from kaggle from the below link:
 https://www.kaggle.com/datasets/noepinefrin/yolov9-fine-tuned-plate-detection-model-weights
 
 While running the model use this weights.
+
+### Reading Number Plate:
+To read the number plate, we extract the text out of the lisence plate detected. Here Easy OCR is used to read the text.
