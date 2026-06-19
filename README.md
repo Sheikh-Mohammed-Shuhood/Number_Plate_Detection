@@ -87,3 +87,9 @@ While running the model use this weights.
 
 ### Reading Number Plate:
 To read the number plate, we extract the text out of the lisence plate detected. Here Easy OCR is used to read the text.
+```
+import cv2
+import torch
+import easyocr
+import numpy as np
+```
