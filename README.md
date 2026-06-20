@@ -92,4 +92,32 @@ import cv2
 import torch
 import easyocr
 import numpy as np
+
+for *xyxy, conf, cls in reversed(det):
+                    # ---- START EASYOCR INTEGRATION ----
+                    ocr_text = ""
+                    if conf > 0.40: # Only run OCR on reasonably confident detections
+                        try:
+                            # Extract coordinates
+                            xmin, ymin, xmax, ymax = int(xyxy[0]), int(xyxy[1]), int(xyxy[2]), int(xyxy[3])
+                            h_img, w_img, _ = im0.shape
+                            
+                            # Crop the license plate from the original high-res image (im0)
+                            # Adding a small 2-pixel padding safely within boundaries
+                            cropped_plate = im0[max(0, ymin-2):min(h_img, ymax+2), max(0, xmin-2):min(w_img, xmax+2)]
+                            
+                            if cropped_plate.size > 0:
+                                # Pre-process: Grayscale and Upscale by 2x for better readability
+                                gray_plate = cv2.cvtColor(cropped_plate, cv2.COLOR_BGR2GRAY)
+                                resized_plate = cv2.resize(gray_plate, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+                                
+                                # Feed into EasyOCR
+                                ocr_results = reader.readtext(resized_plate)
+                                
+                                if ocr_results:
+                                    # Combine texts if it detects multiple lines/blocks inside the box
+                                    ocr_text = " ".join([res[1] for res in ocr_results]).strip()
+                                    LOGGER.info(f"✨ TEXT DETECTED: {ocr_text} (YOLO Conf: {conf:.2f})")
+                        except Exception as e:
+                            LOGGER.error(f"OCR Error: {e}")
 ```
