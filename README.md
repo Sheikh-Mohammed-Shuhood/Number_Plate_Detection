@@ -121,3 +121,4 @@ for *xyxy, conf, cls in reversed(det):
                         except Exception as e:
                             LOGGER.error(f"OCR Error: {e}")
 ```
+This piece of the code should be put in detect.py file
