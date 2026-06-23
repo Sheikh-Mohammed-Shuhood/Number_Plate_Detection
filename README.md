@@ -122,3 +122,5 @@ for *xyxy, conf, cls in reversed(det):
                             LOGGER.error(f"OCR Error: {e}")
 ```
 This piece of the code should be put in detect.py file, and the license plate will be captured and showed in terminal
+
+This code can be further enhanced for various projects where there is need of capturing the license plate.
