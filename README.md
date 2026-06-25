@@ -126,3 +126,8 @@ This piece of the code should be put in detect.py file, and the license plate wi
 This code can be further enhanced for various projects where there is need of capturing the license plate.
 Running the code in GPU makes it muxh more faster rather than running in CPU.
 For transfer learning GPU is needed.
+
+Future Enhancements
+* Database Integration: Log extracted license plate numbers with timestamps into a SQL or NoSQL database.
+* Web Dashboards: Stream real-time bounding box outputs and metadata to a web portal using Streamlit or Flask.
+* Custom Transfer Learning: Fine-tune the network on region-specific number plate styles for enhanced OCR accuracy.
