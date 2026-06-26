@@ -131,3 +131,4 @@ Future Enhancements
 * Database Integration: Log extracted license plate numbers with timestamps into a SQL or NoSQL database.
 * Web Dashboards: Stream real-time bounding box outputs and metadata to a web portal using Streamlit or Flask.
 * Custom Transfer Learning: Fine-tune the network on region-specific number plate styles for enhanced OCR accuracy.
+
