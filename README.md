@@ -47,6 +47,7 @@ Windows Powershell:
 python .venv/Scripts/activate
 ```
 Once activated, your terminal prompt will show (.venv) at the beginning.
+All the libraries installed inside that environment will only be accessible within it, not globally.
 
 ### 5. Dependency Installation
 Install Requirements
