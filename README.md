@@ -48,6 +48,7 @@ python .venv/Scripts/activate
 ```
 Once activated, your terminal prompt will show (.venv) at the beginning.
 All the libraries installed inside that environment will only be accessible within it, not globally.
+There by there will be no conflict in the various versions of the packages required by this application.
 
 ### 5. Dependency Installation
 Install Requirements
